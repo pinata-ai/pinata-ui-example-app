@@ -28,10 +28,10 @@ const LoginPage = () => {
     } = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            clientID: "01JS2J8SSSEJRN6YJE7NP4H9A4",
-            clientKey: "9f3fa56325548c5404f8aa941399e4fff4e1dddb",
-            clientSecret: "41e3128d402d5a1a5e6ab28c12b3d7ad4798c813",
-            userEmail: process.env.STORYBOOK_USER_EMAIL,
+            clientID: "",
+            clientKey: "",
+            clientSecret: "",
+            userEmail: "",
             isProd: false,
         },
     });
