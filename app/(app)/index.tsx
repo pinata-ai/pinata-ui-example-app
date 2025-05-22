@@ -31,25 +31,24 @@ const HomePage = () => {
 
     return (
         <View style={styles.wrapper}>
-            <Image source={{uri: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"}} style={{width: '100%', height: 200}}/>
-            <View style={{height: 150}}>
-                <WebView
-                    originWhitelist={['*']}
-                    source={{html}}
-                    style={styles.webview}
-                    javaScriptEnabled
-                    domStorageEnabled
-                    allowFileAccess
-                    allowFileAccessFromFileURLs
-                    allowUniversalAccessFromFileURLs
-                    onMessage={e => console.log('Message from WebView:', e.nativeEvent.data)}
-                    onError={e => {
-                        console.warn('WebView error:', e.nativeEvent);
-                    }}
-                    mixedContentMode="always"
-                />
-            </View>
-            <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quisquam, repellat. Accusamus aspernatur autem illo ipsam quod? Quod, repudiandae voluptas.</Text>
+            <Image
+                source={{uri: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"}}
+                style={{width: '100%', height: 200}}/>
+            <WebView
+                originWhitelist={['*']}
+                source={{html}}
+                style={styles.webview}
+                javaScriptEnabled
+                domStorageEnabled
+                allowFileAccess
+                allowFileAccessFromFileURLs
+                allowUniversalAccessFromFileURLs
+                onMessage={e => console.log('Message from WebView:', e.nativeEvent.data)}
+                onError={e => {
+                    console.warn('WebView error:', e.nativeEvent);
+                }}
+                mixedContentMode="always"
+            />
         </View>
     );
 }
