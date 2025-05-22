@@ -1,5 +1,4 @@
-// context/AuthContext.tsx
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { getUser, saveUser, removeUser } from '../utils';
 
 type AuthContextType = {

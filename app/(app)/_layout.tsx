@@ -1,5 +1,4 @@
-import {Redirect, Stack} from 'expo-router';
-import {StatusBar} from "expo-status-bar";
+import {Redirect} from 'expo-router';
 import {useAuth} from "../../src/shared/services/AuthProvider";
 import {Drawer} from "expo-router/drawer";
 import {StyleSheet, Text} from "react-native";
