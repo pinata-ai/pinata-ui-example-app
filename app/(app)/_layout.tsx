@@ -1,8 +1,8 @@
 import {Redirect} from 'expo-router';
-import {useAuth} from "../../src/shared/services/AuthProvider";
 import {Drawer} from "expo-router/drawer";
 import {StyleSheet, Text} from "react-native";
 import {Pressable} from "react-native-gesture-handler";
+import { useAuth } from '../../src/shared/services/AuthProvider';
 
 
 export default function AppLayout() {
