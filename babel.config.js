@@ -9,13 +9,10 @@ module.exports = function (api) {
                     envName: 'APP_ENV',
                     moduleName: '@env',
                     path: '.env',
-                    blocklist: null,
-                    allowlist: null,
-                    blacklist: null, // DEPRECATED
-                    whitelist: null, // DEPRECATED
+                    allowlist: ['BASE_URL'],
                     safe: false,
-                    allowUndefined: true,
-                    verbose: false,
+                    allowUndefined: false,
+                    verbose: true,
                 },
             ],
         ]
