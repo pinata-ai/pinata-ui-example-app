@@ -1,5 +1,6 @@
 import {FetchController} from "./FetchController";
 import {generateHMACSignature} from "../utils";
+import Constants from 'expo-constants';
 
 type TokenPair = {
     accessToken: string;
@@ -7,16 +8,17 @@ type TokenPair = {
 };
 
 const PROD_URL = "https://www.pinata.ai/partners/api/v1/";
-const DEV_URL = process.env.BASE_URL as string;
+const DEV_URL = Constants.expoConfig?.extra?.BASE_URL || "https://sandbox.pinata.ai/partners/api/v1/";
+
 
 export class PinataService {
     private _fetchController: FetchController;
 
     constructor(isProd: boolean = false) {
+        const baseUrl = isProd ? PROD_URL : DEV_URL;
+        
         this._fetchController = new FetchController({
-            baseUrl: isProd
-                ? PROD_URL
-                : DEV_URL,
+            baseUrl,
             headers: {
                 "Content-Type": "application/json",
             },

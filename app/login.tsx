@@ -6,6 +6,7 @@ import {Pressable} from "react-native-gesture-handler";
 import {useAuth} from "../src/shared/services/AuthProvider";
 import {Redirect, useRouter} from "expo-router";
 import {PinataService} from "../src/shared/services/pinataservice";
+import Constants from 'expo-constants';
 
 const fieldRequiredMessage = "This field is required" as const;
 
@@ -28,10 +29,10 @@ const LoginPage = () => {
     } = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            clientID: "",
-            clientKey: "",
-            clientSecret: "",
-            userEmail: "",
+            clientID: Constants.expoConfig?.extra?.CLIENT_ID || "",
+            clientKey: Constants.expoConfig?.extra?.CLIENT_KEY || "",
+            clientSecret: Constants.expoConfig?.extra?.CLIENT_SECRET || "",
+            userEmail: Constants.expoConfig?.extra?.USER_EMAIL || "",
             isProd: false,
         },
     });
