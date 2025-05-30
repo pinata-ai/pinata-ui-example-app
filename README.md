@@ -2,6 +2,8 @@
 
 This small example project demonstrates the usage of the Pinata React Native component library. It showcases how to integrate Pinata's UI components into a React Native application, including authentication flow and basic navigation.
 
+> ⚠️ **Security Warning**: For the ease of this example, company secrets are included in the environment configuration. However, in a production environment, the company client key, ID, or secret should never be used in a front-end application. These credentials should be kept secure and only used in a secure backend service.
+
 ## Features
 
 - Integration with Pinata's React Native UI components
