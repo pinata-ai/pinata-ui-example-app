@@ -1,10 +1,10 @@
-import {Text} from 'react-native'
+import {PinataRewardsFlow} from "pinata-ui-react-native";
 import {useAuth} from "../../src/shared/services/AuthProvider";
 
 const RewardsPage = () => {
     const {user} = useAuth()
     return (
-        <Text>Rewards</Text>
+        <PinataRewardsFlow token={user?.token}/>
     );
 }
 

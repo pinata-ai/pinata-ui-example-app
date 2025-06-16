@@ -1,10 +1,10 @@
-import {Text} from 'react-native'
+import {CreditReportingFlow} from "pinata-ui-react-native"
 import {useAuth} from "../../src/shared/services/AuthProvider";
 
 export const CRFlow = () => {
     const {user} = useAuth()
     return (
-        <Text>CRFlow</Text>
+        <CreditReportingFlow token={user?.token}/>
     )
 
 }
