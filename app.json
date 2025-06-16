@@ -12,7 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "owner": "aidar08",
+    "owner": "pinataai",
     "ios": {
       "supportsTablet": true
     },
@@ -21,7 +21,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.aidar08.uidemoapp",
+      "package": "com.pinataai.uidemoapp",
       "edgeToEdgeEnabled": true
     },
     "web": {

@@ -27,7 +27,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>com.aidar08.uidemoapp</string>
+          <string>com.pinataai.uidemoapp</string>
         </array>
       </dict>
       <dict>

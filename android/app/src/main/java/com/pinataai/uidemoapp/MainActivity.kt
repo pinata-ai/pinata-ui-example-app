@@ -1,4 +1,4 @@
-package com.aidar08.uidemoapp
+package com.pinataai.uidemoapp
 
 import android.os.Build
 import android.os.Bundle

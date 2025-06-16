@@ -15,11 +15,11 @@ export default {
       "**/*"
     ],
     ios: {
-    "bundleIdentifier": "com.aidar08.uidemoapp",
+    bundleIdentifier: "com.pinataai.uidemoapp",
     supportsTablet: true
     },
     android: {
-    "package": "com.aidar08.uidemoapp",
+    package: "com.pinataai.uidemoapp",
     adaptiveIcon: {
         foregroundImage: "./assets/adaptive-icon.png",
         backgroundColor: "#ffffff"
@@ -28,7 +28,7 @@ export default {
     web: {
     favicon: "./assets/favicon.png"
     },
-    owner: "aidar08",
+    owner: "pinataai",
     extra: {
     BASE_URL: process.env.BASE_URL || "https://sandbox.pinata.ai/partners/api/v1/",
     CLIENT_KEY: process.env.CLIENT_KEY || "",
