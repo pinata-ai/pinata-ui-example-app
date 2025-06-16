@@ -1,4 +1,4 @@
-package com.pinataai.uidemoapp
+package com.pinata.uidemoapp
 
 import android.app.Application
 import android.content.res.Configuration

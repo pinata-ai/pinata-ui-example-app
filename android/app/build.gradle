@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.pinataai.uidemoapp'
+    namespace 'com.pinata.uidemoapp'
     defaultConfig {
-        applicationId 'com.pinataai.uidemoapp'
+        applicationId 'com.pinata.uidemoapp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

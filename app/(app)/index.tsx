@@ -1,6 +1,6 @@
 import {useRouter} from "expo-router";
 import {StyleSheet, View} from "react-native";
-import {PinataPointsWallet} from "pinata-ui-react-native";
+import {Text} from 'react-native'
 import {useAuth} from "../../src/shared/services/AuthProvider";
 
 const HomePage = () => {
@@ -9,11 +9,7 @@ const HomePage = () => {
 
     return (
         <View style={styles.wrapper}>
-            <PinataPointsWallet
-                onClick={() => {
-                    push('/rewards')
-                }}
-                token={user?.token}/>
+            <Text>Home</Text>
         </View>
     );
 }
