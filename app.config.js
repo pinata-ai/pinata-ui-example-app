@@ -36,7 +36,7 @@ export default {
             CLIENT_ID: process.env.CLIENT_ID || "",
             USER_EMAIL: process.env.USER_EMAIL || "",
             eas: {
-                "projectId": "a9ffd9f6-1ed0-4c1e-8227-10748ddcc064"
+                "projectId": "516ef122-b274-44ad-a45d-a79d5b2d6879"
             }
 
         }
