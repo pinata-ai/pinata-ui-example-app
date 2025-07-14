@@ -32,6 +32,10 @@ export default function AppLayout() {
                     name="CRFlow"
                     options={{ title: "Credit Reporting flow" }}
                 />
+                <Drawer.Screen
+                    name="CoreCRFlow"
+                    options={{ title: "Core Credit Reporting flow" }}
+                />
             </Drawer>
             <Pressable style={styles.button} onPress={logout}>
                 <Text style={styles.buttonText}>Logout</Text>
