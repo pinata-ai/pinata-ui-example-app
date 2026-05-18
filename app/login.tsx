@@ -37,10 +37,6 @@ const LoginPage = () => {
         },
     });
 
-    if (user) {
-        return <Redirect href={"/"}/>
-    }
-
     const onSubmit = async ({clientID, clientKey, clientSecret, userEmail}: any) => {
         try {
             const pinataService = new PinataService(false);
@@ -65,6 +61,10 @@ const LoginPage = () => {
             console.log(err);
         }
     };
+
+    if (user) {
+        return <Redirect href={"/"}/>
+    }
 
     return (
         <View style={styles.wrapper}>
